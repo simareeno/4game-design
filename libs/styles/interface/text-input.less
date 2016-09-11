@@ -1,0 +1,113 @@
+.text-input {
+	position: relative;
+
+	&__input {
+		appearance: none;
+		border: 0;
+		border-radius: 5px;
+		outline: 0;
+		transition: box-shadow .2s ease-out;
+	}
+}
+
+.text-input--dark {
+
+	.text-input__input {
+		background: #151517;
+		color: white;
+		box-shadow: 0 0 0 2px rgba(255,255,255, .1);
+
+		&::-webkit-input-placeholder {
+			color: rgba(255,255,255, .2);
+		}
+	}
+}
+
+.text-input--dark:hover {
+
+	.text-input__input {
+		box-shadow: 0 0 0 2px rgba(255,255,255, .2);
+		transition: box-shadow .05s ease-in;
+	}
+}
+
+.text-input--dark:focus {
+
+	.text-input__input {
+		box-shadow: 0 0 0 2px rgba(255,255,255, .3);
+	}
+}
+
+.text-input--dark.text-input--disabled {
+
+	.text-input__input {
+		background: rgba(255,255,255, .05);
+
+		&::-webkit-input-placeholder {
+			color: rgba(255,255,255, .2);
+		}
+	}
+}
+
+.text-input--dark.text-input--disabled:hover {
+
+	.text-input__input {
+		box-shadow: 0 0 0 2px rgba(255,255,255, .1);
+	}
+}
+
+.text-input--xl {
+
+	.text-input__input {
+		line-height: 40px;
+		font-size: 22px;
+		padding: 0 0 0 12px;
+		font-family: 'PT Sans', Arial;
+
+		&::-webkit-input-placeholder {
+			font-family: 'PT Sans', Arial;
+		}
+	}
+}
+
+.text-input--l {
+
+	.text-input__input {
+		line-height: 32px;
+		font-size: 18px;
+		padding: 0 0 0 8px;
+		font-family: 'PT Sans', Arial;
+
+		&::-webkit-input-placeholder {
+			font-family: 'PT Sans', Arial;
+		}
+	}
+}
+
+.text-input--m {
+
+	.text-input__input {
+		 line-height: 26px;
+		font-size: 14px;
+		padding: 0 0 0 4px;
+		font-family: Arial;
+
+		&::-webkit-input-placeholder {
+			font-family: Arial;
+		}
+	}
+}
+
+.text-input--disabled {
+	cursor: not-allowed;
+	user-select: none;
+}
+
+.text-input__eye {
+	position: absolute;
+	width: 42px;
+	z-index: 1;
+	right: 4px;
+	top: 6px;
+	cursor: pointer;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Инпуты на «Фогейме»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/interface/text-input.css">
+	<link rel="stylesheet" href="../css/interface.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+</head>
+<body>
+
+	<div class="wrapper head">
+		<div class="head__title"><a class="head__title-link" href="../index.html">Дизайн Фогейма </a><span class="slash">/</span> Интерфейс</div>
+	</div>
+
+	<div class="wrapper interface">
+		<div class="components">
+			<div class="component"><a class="component__link" href="all.html">Всё сразу</a></div>
+			<div class="component"><a class="component__link" href="button.html">Button</a></div>
+			<div class="component component--active"><a class="component__link" href="text-input.html">Text input</a></div>
+			<div class="component"><a class="component__link" href="select.html">Select</a></div>
+			<div class="component"><a class="component__link" href="checkbox.html">Checkbox</a></div>
+			<div class="component"><a class="component__link" href="radio.html">Radio</a></div>
+			<div class="component"><a class="component__link" href="tabs.html">Tabs</a></div>
+		</div>
+
+		<div class="viewer">
+			<div class="list">
+				<div class="list__item">
+					<div class="list__caption">XL</div>
+					<div class="list__content">
+						<span class="text-input text-input--xl text-input--dark">
+							<input placeholder="Написать" type="text" class="text-input__input">
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__caption">L</div>
+					<div class="list__content">
+						<span class="text-input text-input--l text-input--dark">
+							<input placeholder="Написать" type="text" class="text-input__input">
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__caption">M</div>
+					<div class="list__content">
+						<span class="text-input text-input--m text-input--dark">
+							<input placeholder="Написать" type="text" class="text-input__input">
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__caption">Неактвный</div>
+					<div class="list__content">
+						<span class="text-input text-input--xl text-input--dark text-input--disabled">
+							<input placeholder="Написать" disabled type="text" class="text-input__input">
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__caption">Номер</div>
+					<div class="list__content">
+						<span class="text-input text-input--xl text-input--dark">
+							<input value="5" type="number" class="text-input__input">
+						</span>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__caption">Пароль</div>
+					<div class="list__content">
+						<span class="text-input text-input--xl text-input--dark">
+							<span class="text-input__eye eye"><svg class="eye__svg"></svg></span>
+							<input placeholder="Введи пароль" type="password" class="text-input__input">
+						</span>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+	<script src="../scripts/eye.js" charset="utf-8"></script>
+
+</body>
+</html>

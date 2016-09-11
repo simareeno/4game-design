@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src(STYLES)
+	return gulp.src([STYLES, '!node_modules/**/*', '!out/**/*'])
 		.pipe(plumber())
 		.pipe(less({
 			plugins: [autoprefix]

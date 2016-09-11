@@ -75,7 +75,6 @@ h1 {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background: rgba(255,255,255,.07);
 			height: 300px;
 			width: inherit;
 			overflow: hidden;
@@ -97,15 +96,32 @@ h1 {
 			&-title {
 				.white-link-hover;
 			}
+
 		}
 
 		&--logotype & {
 
-			&-cover img {
-				transform: scale(.25);
+			&-cover {
+				background: @yellow;
+
+				img {
+					transform: scale(.25);
+				}
+
+			}
+		}
+
+		&--fonts & {
+
+			&-cover {
+				background: white;
 			}
 		}
 	}
+}
+
+.slash {
+	opacity: .5;
 }
 
 

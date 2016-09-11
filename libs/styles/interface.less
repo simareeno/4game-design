@@ -1,0 +1,77 @@
+@import "vars";
+
+.components {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index:1;
+}
+
+.component {
+	color: white;
+
+	&__link {
+		display: block;
+		padding-left: 60px;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 60px;
+		color: currentColor;
+		.white-link;
+	}
+
+	&:hover & {
+
+		&__link {
+			color: inherit;
+			.white-link-hover;
+		}
+	}
+
+	&--active {
+		color: @yellow;
+	}
+
+	&--active & {
+
+		&__link {
+			color: inherit;
+			opacity: 1;
+
+		}
+	}
+}
+
+.viewer {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list {
+
+	&__item {
+
+		& + & {
+			margin-top: 32px;
+		}
+	}
+
+	&__caption {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		opacity: .25;
+		padding-bottom: 8px;
+	}
+}
