@@ -11,7 +11,7 @@ var autoprefix = new AutoPrefixPlugin({
 	browsers: ['last 2 versions']
 });
 
-var HTML = '*.html';
+var HTML = '**/*.html';
 var IMAGES = 'libs/img/**/*';
 var STYLES = 'libs/styles/**/*.less';
 var SCRIPTS = 'libs/scripts/**/*.js';
@@ -23,7 +23,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('html', function() {
-	return gulp.src(HTML)
+	return gulp.src([HTML, '!node_modules/**/*', '!out/**/*'])
 		.pipe(plumber())
 		.pipe(gulp.dest('out'));
 });
