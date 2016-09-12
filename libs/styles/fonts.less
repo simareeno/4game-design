@@ -1,5 +1,6 @@
 .fonts {
 	margin: 80px 0 160px;
+	padding: 0 42px;
 	justify-content: center;
 
 	.list {
@@ -20,10 +21,11 @@
 	&__top-wrapper {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
-	&__file {
-		margin-left: 24px;
+	&__cover {
+		margin-right: 24px;
 	}
 
 	&__description {
@@ -31,5 +33,21 @@
 		font-size: 22px;
 		font-weight: bold;
 		opacity: .5;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.fonts {
+		justify-content: flex-start;
+
+		.list {
+			width: 100%;
+		}
+	}
+
+	.font__file {
+		margin-top: 24px;
 	}
 }
