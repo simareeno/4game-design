@@ -121,6 +121,27 @@ h1 {
 	}
 }
 
+.menu__item {
+
+	&--soon & {
+
+		&-title {
+			opacity: .1!important;
+		}
+
+		&-cover {
+			opacity: .25;
+		}
+	}
+
+	&--soon {
+
+		&:hover a {
+			cursor: default;
+		}
+	}
+}
+
 .slash {
 	opacity: .5;
 }
@@ -144,6 +165,10 @@ h1 {
 			color: white;
 			.white-link-hover;
 		}
+	}
+
+	&--file {
+		letter-spacing: 2px;
 	}
 }
 
@@ -203,6 +228,13 @@ h1 {
 }
 
 @media screen and (max-width: 580px) {
+
+	.choose {
+		position: initial;
+	}
+}
+
+@media screen and (max-height: 650px) {
 
 	.choose {
 		position: initial;

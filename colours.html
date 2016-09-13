@@ -4,8 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Цвета «Фогейма»</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+	<script src="scripts/emerge.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/colours.css">
+	<script src="scripts/clipboard.min.js" charset="utf-8"></script>
 </head>
 <body>
 
@@ -13,10 +16,10 @@
 		<div class="head__title"><a class="head__title-link" href="index.html">Дизайн Фогейма </a><span class="slash">/</span> Цвета</div>
 	</div>
 
-	<div class="wrapper colours">
+	<div class="wrapper colours emerge">
 		<div class="list">
 			<div class="list__item colour colour--yellow">
-				<div class="colour__fill"></div>
+				<div class="colour__fill" data-clipboard-text="fac704"></div>
 				<div class="colour__codes"><div class="colour__codes-wrapper">
 					<div class="colour__codes-code colour__codes-hex">fac704</div>
 					<div class="colour__codes-code colour__codes-rgb"><span class="space-right">250</span><span class="space-right">199</span><span class="space-right">4</span></div>
@@ -24,7 +27,7 @@
 				</div></div>
 			</div>
 			<div class="list__item colour colour--green">
-				<div class="colour__fill"></div>
+				<div class="colour__fill" data-clipboard-text="2bc124"></div>
 				<div class="colour__codes"><div class="colour__codes-wrapper">
 					<div class="colour__codes-code colour__codes-hex">2bc124</div>
 					<div class="colour__codes-code colour__codes-rgb"><span class="space-right">43</span><span class="space-right">193</span><span class="space-right">36</span></div>
@@ -32,7 +35,7 @@
 				</div></div>
 			</div>
 			<div class="list__item colour colour--red">
-				<div class="colour__fill"></div>
+				<div class="colour__fill" data-clipboard-text="ff4b23"></div>
 				<div class="colour__codes"><div class="colour__codes-wrapper">
 					<div class="colour__codes-code colour__codes-hex">ff4b23</div>
 					<div class="colour__codes-code colour__codes-rgb"><span class="space-right">255</span><span class="space-right">75</span><span class="space-right">35</span></div>
@@ -40,7 +43,7 @@
 				</div></div>
 			</div>
 			<div class="list__item colour colour--blue">
-				<div class="colour__fill"></div>
+				<div class="colour__fill" data-clipboard-text="57A0E3"></div>
 				<div class="colour__codes"><div class="colour__codes-wrapper">
 					<div class="colour__codes-code colour__codes-hex">57A0E3</div>
 					<div class="colour__codes-code colour__codes-rgb"><span class="space-right">87</span><span class="space-right">160</span><span class="space-right">227</span></div>
@@ -49,6 +52,41 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		var yellow = new Clipboard('.colour--yellow .colour__fill');
+		var green = new Clipboard('.colour--green .colour__fill');
+		var red = new Clipboard('.colour--red .colour__fill');
+		var blue = new Clipboard('.colour--blue .colour__fill');
+
+		yellow.on('success', function(e) {
+			e.trigger.classList.add('colour__fill--active');
+			setTimeout(function () {
+				e.trigger.classList.remove('colour__fill--active')
+			}, 500);
+		});
+
+		green.on('success', function(e) {
+			e.trigger.classList.add('colour__fill--active');
+			setTimeout(function () {
+				e.trigger.classList.remove('colour__fill--active')
+			}, 500);
+		});
+
+		red.on('success', function(e) {
+			e.trigger.classList.add('colour__fill--active');
+			setTimeout(function () {
+				e.trigger.classList.remove('colour__fill--active')
+			}, 500);
+		});
+
+		blue.on('success', function(e) {
+			e.trigger.classList.add('colour__fill--active');
+			setTimeout(function () {
+				e.trigger.classList.remove('colour__fill--active')
+			}, 500);
+		});
+	</script>
 
 </body>
 </html>

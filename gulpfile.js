@@ -8,7 +8,7 @@ var plumber = require('gulp-plumber');
 
 var AutoPrefixPlugin = require('less-plugin-autoprefix');
 var autoprefix = new AutoPrefixPlugin({
-	browsers: ['last 2 versions']
+	browsers: ["> 0%"]
 });
 
 var HTML = '**/*.html';
