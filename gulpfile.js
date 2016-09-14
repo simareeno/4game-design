@@ -29,7 +29,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(SCRIPTS)
+	return gulp.src([SCRIPTS, '!node_modules/**/*', '!out/**/*'])
 		.pipe(plumber())
 		.pipe(gulp.dest('out/scripts'));
 });

@@ -5,7 +5,7 @@
 	<title>Чекбоксы на «Фогейме»</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/interface/checkbox.css">
 	<link rel="stylesheet" href="../css/interface.css">
 </head>
 <body>
@@ -23,6 +23,25 @@
 			<div class="component component--active"><a class="component__link" href="checkbox.html">Checkbox</a></div>
 			<div class="component"><a class="component__link" href="radio.html">Radio</a></div>
 			<div class="component"><a class="component__link" href="tabs.html">Tabs</a></div>
+		</div>
+	</div>
+
+	<div class="viewer">
+		<div class="checkbox checkbox--dark">
+			<span class="checkbox__box">
+				<svg class="checkbox__check check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13">
+					<path class="check__sign" d="M12.78,0L4.67,9.14,1.17,5.71,0,8l3.63,4,0.85,1,0.88-1L14,1.14Z"/>
+				</svg>
+				<input
+					class="checkbox__input"
+					type="checkbox"
+					value="value"
+					name="name"
+					disabled="true"
+					checked="true"
+				/>
+			</span>
+			<span class="checkbox__text">label</span>
 		</div>
 	</div>
 

@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Селекты на «Фогейме»</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+	<script src="../scripts/interface/select.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/interface/select.css">
 	<link rel="stylesheet" href="../css/interface.css">
 </head>
 <body>
@@ -23,6 +25,35 @@
 			<div class="component"><a class="component__link" href="checkbox.html">Checkbox</a></div>
 			<div class="component"><a class="component__link" href="radio.html">Radio</a></div>
 			<div class="component"><a class="component__link" href="tabs.html">Tabs</a></div>
+		</div>
+	</div>
+
+	<div class="viewer">
+		<div class="select select--black select--x">
+			<div class="select__input">
+				<div class="select__input-text">Point Blank</div>
+				<div class="select__input-arrows">
+					<div class="select__input-arrows-up">
+						<svg x="0px" y="0px" viewBox="0 0 6 5">
+							<path d="M0,0h6L3,5L0,0z"/>
+						</svg>
+					</div>
+					<div class="select__input-arrows-down">
+						<svg x="0px" y="0px" viewBox="0 0 6 5">
+							<path d="M0,0h6L3,5L0,0z"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="select__list">
+				<div class="select__list-item select__list-item-first">Aion</div>
+				<div class="select__list-item">Blade and Soul</div>
+				<div class="select__list-item">R2 Online</div>
+				<div class="select__list-item">RF Online</div>
+				<div class="select__list-item">Devil's Third Online</div>
+				<div class="select__list-item select__list-item--active">Point Blank</div>
+				<div class="select__list-item select__list-item-last">Dragensang Online</div>
+			</div>
 		</div>
 	</div>
 
