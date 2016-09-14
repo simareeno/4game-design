@@ -47,6 +47,16 @@
 		}
 	}
 
+	&--yellow {
+
+		.colour__fill {
+
+			&:after {
+				color: black;
+			}
+		}
+	}
+
 
 	&--blue & {
 		&__fill {
@@ -113,11 +123,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	// &:before {
-	// 	content: '';
-	// 	background-image: url(../img/clipboard-check.svg);
-	// }
 
 	&:after {
 		content: 'скопировать';
