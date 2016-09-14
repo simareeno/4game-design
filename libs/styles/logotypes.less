@@ -93,7 +93,7 @@
 	.list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 
 		&__item {
 			padding: 40px;
@@ -126,5 +126,12 @@
 
 	.logotypes {
 		position: initial;
+	}
+}
+
+@media screen and (max-width: 1620px) and (min-width: 1005px) {
+
+	.logotypes .list {
+		width: 995px;
 	}
 }

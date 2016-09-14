@@ -4,8 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Кнопки на «Фогейме»</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+	<script src="../scripts/interface/tabs.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/interface/button.css">
+	<link rel="stylesheet" href="../css/interface/tabs.css">
 	<link rel="stylesheet" href="../css/interface.css">
 </head>
 <body>
@@ -14,38 +17,51 @@
 		<div class="head__title"><a class="head__title-link" href="../index.html">Дизайн Фогейма </a><span class="slash">/</span> Интерфейс</div>
 	</div>
 
-	<div class="wrapper interface">
+	<div class="interface">
 		<div class="components">
 			<div class="component"><a class="component__link" href="all.html">Всё сразу</a></div>
-			<div class="component component--active"><a class="component__link" href="button.html">Button</a></div>
-			<div class="component"><a class="component__link" href="text-input.html">Text input</a></div>
-			<div class="component"><a class="component__link" href="select.html">Select</a></div>
-			<div class="component"><a class="component__link" href="checkbox.html">Checkbox</a></div>
-			<div class="component"><a class="component__link" href="radio.html">Radio</a></div>
-			<div class="component"><a class="component__link" href="tabs.html">Tabs</a></div>
+			<div class="component component--active"><a class="component__link" href="button.html">Кнопка</a></div>
+			<div class="component"><a class="component__link" href="tabs.html">Табы</a></div>
 		</div>
 	</div>
 
 	<div class="viewer">
-		<div class="list">
-			<div class="list__item">
-				<div class="list__content"><div class="button button--x button--yellow">Размер X</div></div>
-			</div>
-			<div class="list__item">
-				<div class="list__content"><div class="button button--m button--yellow">Размер M</div></div>
-			</div>
-			<div class="list__item">
-				<div class="list__content"><div class="button button--s button--yellow"><div class="button__label">Размер S</div></div></div>
-			</div>
-			<div class="list__item">
-				<div class="list__content"><div class="button button--m button--white">Беленькая</div></div>
-			</div>
-			<div class="list__item">
-				<div class="list__content"><div class="button button--s button--yellow button--icon-vk"><div class="button__label"></div></div></div>
-			</div>
-		</div>
-
+		<div class="button button--size-l button--color-yellow">Нажми меня</div>
 	</div>
 
+	<div class="settings">
+		<div class="settings__list">
+			<div class="settings__item setting setting--size">
+				<div class="setting__title">Размер</div>
+				<div class="setting__control">
+					<div class="tabs tabs--size-m tabs--color-black">
+						<div class="tabs__item setting__size-s tabs__item--first">S</div>
+						<div class="tabs__item setting__size-m tabs__item--active">M</div>
+						<div class="tabs__item setting__size-l tabs__item--last">L</div>
+					</div>
+				</div>
+			</div>
+			<div class="settings__item setting setting--color">
+				<div class="setting__title">Цвет</div>
+				<div class="setting__control">
+					<div class="tabs tabs--size-m tabs--color-picker">
+						<div class="tabs__item setting__color-yellow tabs__item--active tabs__item--yellow"></div>
+						<div class="tabs__item setting__color-white tabs__item--white"></div>
+					</div>
+				</div>
+			</div>
+			<div class="settings__item setting setting--background">
+				<div class="setting__title">Фон</div>
+				<div class="setting__control">
+					<div class="tabs tabs--size-m tabs--color-picker">
+						<div class="tabs__item setting__background-dark tabs__item--active tabs__item--dark"></div>
+						<div class="tabs__item setting__background-light tabs__item--white"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="../scripts/interface/interface-button.js" charset="utf-8"></script>
 </body>
 </html>

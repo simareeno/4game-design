@@ -7,6 +7,20 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	transition: background .2s ease-in-out;
+
+	&.body--background-dark {
+		background-color: #151517;
+	}
+
+	&.body--background-light {
+		background-color: white;
+		color: black;
+
+		.head__title-link {
+			color: black;
+		}
+	}
 }
 
 a {

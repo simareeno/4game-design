@@ -114,34 +114,35 @@
 	align-items: center;
 	justify-content: center;
 
-	&:before {
-		content: '';
-		background-image: url(../img/clipboard-check.svg);
-	}
+	// &:before {
+	// 	content: '';
+	// 	background-image: url(../img/clipboard-check.svg);
+	// }
 
 	&:after {
-		content: '';
+		content: 'скопировать';
 		position: absolute;
 		opacity: 0;
-		width: 28px;
-		height: 32px;
-		transition: opacity .2s ease-in-out, transform .2s ease-in-out;
-		background-image: url(../img/clipboard.svg);
+		font-size: 16px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: white;
+		font-weight: bold;
+		transition: opacity .2s ease-in-out, transform .5s ease-in-out;
 	}
 
 	&:hover& {
 
 		&:after {
-			opacity: 1;
+			opacity: .5;
 		}
 	}
 
 	&--active& {
 
 		&:after {
-			opacity: 1!important;
-			transform: scale(1.1);
-			background-image: url(../img/clipboard-check.svg);
+			content: 'сделаль';
+			animation: yeap 1s ease-in-out;
 		}
 	}
 }
@@ -211,4 +212,10 @@
 	.colours {
 		position: initial;
 	}
+}
+
+@keyframes yeap {
+	0% {transform: scale(1); opacity: .5}
+	50% {transform: scale(1.1); opacity: 1}
+	100% {transform: scale(1); opacity: .2}
 }

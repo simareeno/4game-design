@@ -1,3 +1,5 @@
+@import 'interface-vars';
+
 .button {
 	-webkit-user-select: none;
 	display: flex;
@@ -11,7 +13,7 @@
 	cursor: pointer;
 }
 
-.button--yellow {
+.button--color-yellow {
 	background: #ffcc00;
 	background: -moz-linear-gradient(top,  #ffcc00 0%, #eb9f0c 100%);
 	background: -webkit-linear-gradient(top,  #ffcc00 0%,#eb9f0c 100%);
@@ -54,7 +56,7 @@
 	}
 }
 
-.button--white {
+.button--color-white {
 	background-image: -webkit-linear-gradient(#fff, #ccc);
 	text-shadow: none;
 
@@ -132,25 +134,20 @@
 	}
 }
 
-.button--full-width {
-	width: 100%;
-	text-align: center;
-}
-
-.button--x {
+.button--size-l {
 	font-size: 16px;
-	line-height: 40px;
+	line-height: @height-l;
 	font-weight: bold;
 }
 
-.button--m {
+.button--size-m {
 	font-size: 14px;
-	line-height: 32px;
+	line-height: @height-m;
 	font-weight: bold;
 }
 
-.button--s {
+.button--size-s {
 	font-size: 11px;
-	line-height: 26px;
+	line-height: @height-s;
 	font-weight: bold;
 }

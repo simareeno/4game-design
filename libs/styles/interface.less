@@ -12,7 +12,7 @@
 }
 
 .component {
-	color: white;
+
 
 	&__link {
 		display: block;
@@ -73,5 +73,30 @@
 		font-weight: bold;
 		opacity: .25;
 		padding-bottom: 8px;
+	}
+}
+
+.settings {
+	position: absolute;
+	top: 0;
+	right: 60px;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+.setting {
+
+	& + & {
+		margin-top: 40px;
+	}
+
+	&__title {
+		letter-spacing: 2px;
+		font-weight: bold;
+		font-size: 14px;
+		text-transform: uppercase;
+		opacity: .5;
+		margin-bottom: 12px;
 	}
 }
