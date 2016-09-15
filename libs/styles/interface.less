@@ -1,22 +1,24 @@
 @import "vars";
 
+@componentsWidth: 200px;
+
 .components {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	z-index:1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 200px;
 }
 
 .component {
 
-
 	&__link {
 		display: block;
-		padding-left: 60px;
+		padding: 0 30px;
 		font-size: 22px;
 		font-weight: bold;
 		line-height: 60px;
@@ -47,52 +49,54 @@
 }
 
 .viewer {
-	position: absolute;
-	top: 70px;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.list {
-
-	&__item {
-	}
-
-	&__caption {
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-size: 14px;
-		font-weight: bold;
-		opacity: .25;
-		padding-bottom: 8px;
-	}
-}
-
-.settings {
+	width: 100%;
+	flex-wrap: wrap;
 	position: absolute;
-	top: 0;
-	right: 60px;
+	top: 80px;
 	bottom: 0;
-	display: flex;
-	align-items: center;
+	left: 0;
+	right: 0;
+
+	&__wrapper {
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__section {
+
+	}
 }
 
-.setting {
-
-	& + & {
-		margin-top: 40px;
-	}
+.section {
+	padding: 16px 24px;
+	margin: 24px;
 
 	&__title {
-		letter-spacing: 2px;
+		font-size: 22px;
+		line-height: 32px;
 		font-weight: bold;
-		font-size: 14px;
-		text-transform: uppercase;
-		opacity: .5;
-		margin-bottom: 12px;
+		padding-bottom: 16px;
+	}
+
+	&__item + &__item {
+		margin-top: 16px;
+	}
+
+	&--white {
+		background: white;
+		border-radius: 10px;
+	}
+
+	&--white & {
+
+		&__title {
+			color: black;
+		}
 	}
 }

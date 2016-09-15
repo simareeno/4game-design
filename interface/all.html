@@ -4,9 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Все контролы интерфейса «Фогейма»</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+	<script src="../scripts/interface/tabs.js" charset="utf-8"></script>
+	<script src="../scripts/interface/select.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/interface/all.css">
 	<link rel="stylesheet" href="../css/interface.css">
+	<link rel="stylesheet" href="../css/interface/button.css">
+	<link rel="stylesheet" href="../css/interface/tabs.css">
+	<link rel="stylesheet" href="../css/interface/text-input.css">
+	<link rel="stylesheet" href="../css/interface/select.css">
 </head>
 <body>
 
@@ -14,12 +21,80 @@
 		<div class="head__title"><a class="head__title-link" href="../index.html">Дизайн Фогейма </a><span class="slash">/</span> Интерфейс</div>
 	</div>
 
-	<div class="wrapper interface">
-		<div class="components">
-			<div class="component component--active"><a class="component__link" href="all.html">Всё сразу</a></div>
-			<div class="component"><a class="component__link" href="ui-kit.html">UI kit</a></div>
-			<div class="component"><a class="component__link" href="button.html">Кнопка</a></div>
-			<div class="component"><a class="component__link" href="tabs.html">Табы</a></div>
+	<div class="components">
+		<div class="component component--active"><a class="component__link" href="all.html">Главное</a></div>
+		<div class="component"><a class="component__link" href="ui-kit.html">UI kit</a></div>
+		<div class="component"><a class="component__link" href="button.html">Кнопка</a></div>
+		<div class="component"><a class="component__link" href="tabs.html">Табы</a></div>
+	</div>
+
+	<div class="viewer">
+		<div class="viewer__wrapper">
+
+			<div class="viewer__section section">
+				<div class="section__title">Кнопка</div>
+				<div class="section__content">
+					<div class="section__item">
+						<div class="button button--size-l button--color-yellow">Установить</div>
+					</div>
+					<div class="section__item">
+						<div class="button button--size-m button--color-white">Создать аккаунт</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="viewer__section section">
+				<div class="section__title">Табы</div>
+				<div class="section__content">
+					<div class="tabs tabs--color-black tabs--size-l">
+						<div class="tabs__item tabs__item--first tabs__item--active">Настройки входа</div>
+						<div class="tabs__item">Личные данные</div>
+						<div class="tabs__item tabs__item--last">Уведомления</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="viewer__section section">
+				<div class="section__title">Инпут</div>
+				<div class="section__content">
+					<span class="text-input text-input--xl text-input--dark">
+						<input placeholder="Логин" type="text" class="text-input__input">
+					</span>
+				</div>
+			</div>
+
+			<div class="viewer__section section">
+				<div class="section__title">Селект</div>
+				<div class="section__content">
+					<div class="select select--black select--x">
+						<div class="select__input">
+							<div class="select__input-text">Point Blank</div>
+							<div class="select__input-arrows">
+								<div class="select__input-arrows-up">
+									<svg x="0px" y="0px" viewBox="0 0 6 5">
+										<path d="M0,0h6L3,5L0,0z"/>
+									</svg>
+								</div>
+								<div class="select__input-arrows-down">
+									<svg x="0px" y="0px" viewBox="0 0 6 5">
+										<path d="M0,0h6L3,5L0,0z"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="select__list">
+							<div class="select__list-item select__list-item-first">Aion</div>
+							<div class="select__list-item">Blade and Soul</div>
+							<div class="select__list-item">R2 Online</div>
+							<div class="select__list-item">RF Online</div>
+							<div class="select__list-item">Devil's Third Online</div>
+							<div class="select__list-item select__list-item--active">Point Blank</div>
+							<div class="select__list-item select__list-item-last">Dragensang Online</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
