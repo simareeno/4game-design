@@ -54,11 +54,6 @@
 	align-items: center;
 	width: 100%;
 	flex-wrap: wrap;
-	position: absolute;
-	top: 80px;
-	bottom: 0;
-	left: 0;
-	right: 0;
 
 	&__wrapper {
 		width: 70%;
@@ -76,6 +71,12 @@
 .section {
 	padding: 16px 24px;
 	margin: 24px;
+	width: 100%;
+
+	&__content {
+		display: flex;
+		align-item: flex-start;
+	}
 
 	&__title {
 		font-size: 22px;
@@ -85,7 +86,7 @@
 	}
 
 	&__item + &__item {
-		margin-top: 16px;
+		margin-left: 16px;
 	}
 
 	&--white {

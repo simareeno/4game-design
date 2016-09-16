@@ -40,7 +40,6 @@ gulp.task('styles', function() {
 		.pipe(less({
 			plugins: [autoprefix]
 		}))
-		.pipe(minifyCSS())
 		.pipe(gulp.dest('out/css'));
 });
 
