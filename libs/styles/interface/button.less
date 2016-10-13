@@ -14,23 +14,17 @@
 
 .button--yellow-gradient {
 	background: #ffcc00;
-	background: -moz-linear-gradient(top,  #ffcc00 0%, #eb9f0c 100%);
-	background: -webkit-linear-gradient(top,  #ffcc00 0%,#eb9f0c 100%);
-	background: linear-gradient(to bottom,  #ffcc00 0%,#eb9f0c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#eb9f0c',GradientType=0 );
+	background: linear-gradient(to bottom,	#ffcc00 0%,#eb9f0c 100%);
 
 	&:hover {
 		background: #ffcc00;
-		background: -moz-linear-gradient(top,  #ffcc00 0%, #ebaf0c 100%);
-		background: -webkit-linear-gradient(top,  #ffcc00 0%,#ebaf0c 100%);
-		background: linear-gradient(to bottom,  #ffcc00 0%,#ebaf0c 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ebaf0c',GradientType=0 );
+		background: linear-gradient(to bottom,	#ffcc00 0%,#ebaf0c 100%);
 	}
 
 	&:active {
 		box-shadow: 0 3px 6px #64431d inset;
 		background: #a86d34;
-		background: linear-gradient(to bottom,  #a86d34 0%,#ce904d 100%);
+		background: linear-gradient(to bottom,	#a86d34 0%,#ce904d 100%);
 	}
 }
 
@@ -45,8 +39,7 @@
 
 	&:active {
 		background-image: linear-gradient(#949494,#949494);
-    color: #414141;
-    box-shadow: inset 0px 3px 5px rgba(0,0,0,.55);
+		box-shadow: inset 0px 3px 5px rgba(0,0,0,.55);
 	}
 
 	.button__label {
@@ -67,7 +60,7 @@
 			content:"";
 			position: absolute;
 			background: #ffcc00;
-			background: linear-gradient(to bottom,  #ffcc00 0%,#eb9f0c 100%);
+			background: linear-gradient(to bottom,	#ffcc00 0%,#eb9f0c 100%);
 		}
 	}
 
@@ -80,15 +73,16 @@
 		}
 
 		&:active {
-			background-image: linear-gradient(#999, #999);
-			box-shadow: inset 0px 3px 5px rgba(0,0,0,.55);
+			background-image: linear-gradient(#e3e3e3, #e3e3e3);
+			box-shadow: inset 0px 3px 5px rgba(0,0,0,.2);
+			color: #999;
 		}
 
 		&::after {
 			content:"";
 			position: absolute;
 			background: #ffcc00;
-			background: linear-gradient(to bottom,  #e6e7e8 0%, #ccc 100%);
+			background: linear-gradient(to bottom,	#e6e7e8 0%, #ccc 100%);
 		}
 	}
 }
@@ -130,7 +124,6 @@
 
 	&:hover {
 		background: linear-gradient(top,#71b9e4 0,#52a0ce 50%,#499aca 93%);
-		background: -webkit-linear-gradient(top,#71b9e4 0,#52a0ce 50%,#499aca 93%);
 
 		.button__label {
 			color: white;
@@ -144,7 +137,7 @@
 
 	&:active {
 		box-shadow: none;
-		background-image: -webkit-linear-gradient(top,#2a648c 22%,#1d7bb7 100%);
+		background-image: linear-gradient(top,#2a648c 22%,#1d7bb7 100%);
 
 		.button__label {
 			opacity: .5;
