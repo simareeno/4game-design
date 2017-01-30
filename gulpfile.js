@@ -65,6 +65,12 @@ gulp.task('scripts:sync', ['scripts'], function(done) {
 	done();
 });
 
+
+gulp.task('img:sync', ['img'], function(done) {
+	browserSync.reload();
+	done();
+});
+
 gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
@@ -72,7 +78,7 @@ gulp.task('browserSync', function() {
 		},
 	})
 	gulp.watch(join(TEMPLATES, '*.html'), ['html:sync']);
-	gulp.watch(join(IMAGES, '**/*'), ['img']);
+	gulp.watch(join(IMAGES, '**/*'), ['img:sync']);
 	gulp.watch(join(STYLES, '*.less'), ['styles:sync']);
 	gulp.watch(join(SCRIPTS, '**/*'), ['scripts:sync']);
 })

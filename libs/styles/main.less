@@ -126,10 +126,26 @@ h1 {
 			}
 		}
 
+		&--articles & {
+
+			&-cover {
+				background: white;
+
+				img {
+					max-width: 300px;
+				}
+
+			}
+		}
+
 		&--fonts & {
 
 			&-cover {
 				background: white;
+
+				img {
+					max-width: 300px;
+				}
 			}
 		}
 	}
@@ -236,6 +252,13 @@ h1 {
 	}
 }
 
+@media screen and (max-width: 1620px) and (min-width: 1005px) {
+
+	.menu {
+		width: 995px;
+	}
+}
+
 @media screen and (max-width: 1140px) and (min-width: 840px) {
 
 	.menu {
@@ -250,7 +273,7 @@ h1 {
 	}
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 750px) {
 
 	.choose {
 		position: initial;
